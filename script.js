@@ -2,19 +2,15 @@ let inputTexto = document.getElementById('input-texto');
 let resultado = document.getElementById('resultado');
 
 function button_encriptar() {
-    console.log('UEPA');
     let texto = encriptar(inputTexto.value.toLowerCase());
     resultado.value = texto
     resultado.style.backgroundImage = 'none'
-    inputTexto.innerHTML = ('')
 }
 
 function button_desencriptar() {
-    console.log('APEU');
     let texto = descriptografar(inputTexto.value.toLowerCase());
     resultado.value = texto
     resultado.style.backgroundImage = 'none'
-    inputTexto.innerHTML = ('') 
 }
 
 function copiar() {
